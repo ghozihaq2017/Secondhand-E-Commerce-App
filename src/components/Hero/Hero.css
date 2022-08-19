@@ -1,0 +1,48 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.hero {
+    width: 100%;
+    margin: 0 auto;
+    /* height: 570px; */
+}
+
+.hero .mobile {
+    display: none;
+}
+
+.slide img {
+    width: 85%;
+    margin: 4em auto;
+    border-radius: 16px;
+}
+
+.slide {
+    transform: scale(1);
+    transition: transform 300ms;
+    opacity: 0.5;
+}
+
+.activeSlide {
+    transform: scale(1.25);
+    opacity: 1;
+}
+
+
+/* --------------
+    MOBILE
+-------------- */
+
+@media only screen and (max-width: 576px) {
+    .hero .desktop {
+        display: none;
+    }
+    .hero .mobile {
+        display: inherit;
+    }
+    .slide img {
+        margin: 0 auto;
+        width: 80%;
+        height: 350px;
+        /* margin-left: 1.5em; */
+    }
+}

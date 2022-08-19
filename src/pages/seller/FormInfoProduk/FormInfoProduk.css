@@ -1,0 +1,150 @@
+/* --------------
+    DESKTOP
+-------------- */
+
+.title-navbar-produk {
+    display: none;
+}
+
+.info-produk {
+    margin: 4em auto 0;
+    width: 50%;
+}
+
+.info-produk .form .field {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-produk .form .field .label {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.info-produk .form .field .input {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border: 1px solid #D0D0D0;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.info-produk .form .field .input.category .option {
+    color: #D0D0D0;
+}
+
+.info-produk .form .field .image-picker .input-image .button.upload {
+    width: 96px;
+    height: 96px;
+    border: 1px dashed #D0D0D0;
+    border-radius: 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.info-produk .form .field .image-picker .input-image .button.upload .btn-text {
+    margin: auto;
+}
+
+.info-produk .form .field .image-picker .input-image .button.delete {
+    /* width: ; */
+    color: #FFFFFF;
+    border: none;
+    background-color: #fe0000;
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.info-produk .form .field .image-picker .input-image .button.delete:hover {
+    opacity: .5;
+    transition: .3s;
+}
+
+.info-produk .form .button {
+    display: flex;
+}
+
+.info-produk .form .button .btn {
+    margin: 8px 0 258px;
+    flex: 50%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.info-produk .form .button .btn.preview {
+    margin-right: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #7126B5;
+    cursor: pointer;
+}
+
+.info-produk .form .button .btn.preview:hover {
+    color: #FFFFFF;
+    background-color: #7126B5;
+    border: 1px solid #7126B5;
+    transition: .4s;
+}
+
+.info-produk .form .button .btn.terbit {
+    margin-left: 8px;
+    color: #FFFFFF;
+    background-color: #7126B5;
+    border: none;
+    cursor: pointer;
+}
+
+.info-produk .form .button .btn.terbit:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #7126B5;
+    transition: .4s;
+}
+
+.picture-container {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+
+/* 
+upload picture
+*/
+
+.picture {
+    width: 200px;
+}
+
+
+/* --------------
+    MOBILE
+-------------- */
+
+@media only screen and (max-width: 576px) {
+    .title-navbar-produk {
+        width: 100%;
+        background: #FFFFFF;
+        position: fixed;
+        align-items: center;
+        top: -.2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .title-navbar-produk p {
+        margin: .9em auto;
+    }
+    .info-produk {
+        width: 90%;
+        margin-top: 4em;
+    }
+}

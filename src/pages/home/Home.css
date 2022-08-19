@@ -1,0 +1,15 @@
+.home-wrapper {
+    background-color: #FFFFFF;
+    margin: 6em 0 10em 0;
+}
+
+
+/* --------------
+  MOBILE
+-------------- */
+
+@media only screen and (max-width: 576px) {
+    .home-wrapper {
+        margin: 0 0 5em;
+    }
+}

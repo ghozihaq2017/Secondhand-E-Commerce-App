@@ -1,0 +1,83 @@
+.modal-status {
+  width: 360px;
+  height: 364px;
+  padding: 56px 32px 24px 32px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-status .icon-fix {
+  position: absolute;
+  top: 22px;
+  right: 38px;
+  font-size: 20px;
+}
+
+.modal-status .icon-fix:hover {
+  cursor: pointer;
+}
+
+.modal-status h1 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.modal-status input {
+  margin-top: 29px;
+  margin-left: 3px;
+}
+
+.modal-status label {
+  margin-left: 16px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #151515;
+}
+
+.modal-status p {
+  margin-left: 32px;
+  margin-top: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8a8a8a;
+}
+
+.modal-status button {
+  margin-top: 24px;
+  width: 296px;
+  height: 48px;
+  background: #7126b5;
+  border-radius: 16px;
+  border: none;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.modal-status button:hover {
+  background-color: #ffffff;
+  border: 1px solid #7126b5;
+  color: #7126b5;
+  transition: 0.4s;
+  cursor: pointer;
+}

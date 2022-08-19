@@ -1,0 +1,84 @@
+.notif {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.notif-seller {
+  width: 376px;
+  height: 229px;
+  padding: 24px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notif-seller .box-notif {
+  display: flex;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.notif-seller .img-notif {
+  width: 48px;
+  height: 48px;
+  background: url(../../../assets/img/product-3.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+.notif-seller .nama-notif {
+  margin-left: 16px;
+}
+
+.notif-seller h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #8a8a8a;
+}
+
+.notif-seller h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+.notif-seller p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #151515;
+}
+
+.notif-seller .date-notif {
+  margin-left: 5em;
+}
+
+.notif-seller hr {
+  margin-bottom: 16px;
+  width: 328px;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.notif-seller .circle-icon {
+  background: #fa2c5a;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: 0;
+}

@@ -1,0 +1,150 @@
+ .daftarjual-wrapper {
+     margin: 2em 15% 2em 15%;
+ }
+
+ .daftarjual-title {
+     font-style: normal;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 30px;
+ }
+
+ .store-info {
+     /* width: 304px; */
+     box-sizing: border-box;
+     width: 100%;
+     margin-top: 1em;
+     padding: 16px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 16px;
+ }
+
+ .store-info .info {
+     display: flex;
+ }
+
+ .seller-info {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .store-info .profile {
+     margin-right: 16px;
+ }
+
+ .info .name-store {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 20px;
+ }
+
+ .store-info .info .city {
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 14px;
+     color: #8A8A8A;
+ }
+
+ .btn-edit {
+     padding: .5em 1.2em;
+     text-decoration: none;
+     background: #FFFFFF;
+     border: 1px solid #7126B5;
+     border-radius: 8px;
+     color: #151515;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 18px;
+ }
+
+ .btn-edit:hover {
+     background-color: #7126B5;
+     color: #FFFFFF;
+     transition: .4s;
+ }
+
+ .category-filter-wrapper {
+     display: grid;
+     grid-template-columns: .8fr 2fr;
+     margin-top: 1.5em;
+     gap: 2em;
+ }
+
+ .filter-category {
+     height: 18em;
+     background: #FFFFFF;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+     border-radius: 16px;
+     display: flex;
+     flex-direction: column;
+     padding: 1.3em;
+ }
+
+ .title-category {
+     margin-bottom: 2em;
+ }
+
+ .filter-category-btn {
+     color: #000000;
+     text-decoration: none;
+     margin-bottom: 2em;
+     display: flex;
+ }
+
+ .filter-category-icon {
+     margin-right: 7px;
+ }
+
+ .btn-right {
+     display: flex;
+ }
+
+ .konten-daftar-jual {
+     display: grid;
+     grid-template-columns: repeat(3, .5fr);
+     gap: 1.5em;
+ }
+
+ .card-product {
+     background: #FFFFFF;
+     padding: 1em;
+     border-radius: 4px;
+     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+ }
+
+ .card-product img {
+     width: 100%;
+ }
+
+ @media only screen and (max-width: 600px) {
+     .category-filter-wrapper {
+         grid-template-columns: unset;
+         grid-template-rows: auto auto;
+     }
+
+     .daftarjual-wrapper {
+         margin: 2em 2em;
+     }
+ }
+
+ @media(max-width: 960px) {
+     .category-filter-wrapper {
+         grid-template-columns: unset;
+         grid-template-rows: auto auto;
+     }
+
+     .daftarjual-wrapper {
+         margin: 2em 2em;
+     }
+ }
+
+ /* @media(min-width: 1200px) {
+     .category-filter-wrapper {
+         grid-template-rows: 1fr 2fr;
+     }
+ } */

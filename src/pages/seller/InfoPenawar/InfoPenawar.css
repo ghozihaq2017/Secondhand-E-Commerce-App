@@ -1,0 +1,192 @@
+.title-navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: -.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title-navbar p {
+    margin-top: 1.5em;
+}
+
+.info-penawar {
+    margin: 4em 25% 2em;
+}
+
+.info-penawar .buyer {
+    width: 100%;
+    padding: 16px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.info-penawar .buyer .profile {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+}
+
+.info-penawar .buyer .info .name-buyer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.info-penawar .buyer .info .city {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #8a8a8a;
+}
+
+.info-penawar .title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+
+.info-penawar .info-tawar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.info-penawar .info-tawar .product {
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 16px;
+}
+
+.info-penawar .info-tawar .content {
+    width: 100%;
+}
+
+.info-penawar .info-tawar .content .flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-penawar .info-tawar .content .flex p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #8a8a8a;
+}
+
+.info-penawar .info-tawar .content .tawar {
+    margin-top: 4px;
+}
+
+.info-penawar .button {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.info-penawar .button .tolak {
+    width: 11em;
+    padding: 8px 24px;
+    margin-right: 16px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    border: 1px solid #7126b5;
+    cursor: pointer;
+}
+
+.info-penawar .button .tolak:hover {
+    background-color: #7126b5;
+    border: 1px solid #7126b5;
+    color: #ffffff;
+}
+
+.info-penawar .button .terima {
+    width: 11em;
+    padding: 8px 24px;
+    border-radius: 16px;
+    background-color: #7126b5;
+    border: 1px solid #7126b5;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.info-penawar .button .terima:hover {
+    background-color: #ffffff;
+    border: 1px solid #7126b5;
+    color: #000000;
+}
+
+hr.solid {
+    border-top: 3px solid #e5e5e5;
+}
+
+
+/* --------------
+      MOBILE
+  -------------- */
+
+@media only screen and (max-width: 576px) {
+    .info-penawar {
+        margin: 4em auto 2em;
+        width: 90%;
+    }
+    .info-penawar .button {
+        justify-content: center;
+    }
+}
+
+
+/* --------------
+  MODAL
+-------------- */
+
+.mymodal-tawar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 456px;
+    padding: 56px 32px 24px 32px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    outline: none;
+}
+
+.myoverlay {
+    position: fixed;
+    z-index: 22;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}

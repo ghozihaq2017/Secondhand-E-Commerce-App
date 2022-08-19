@@ -1,0 +1,218 @@
+/* --------------
+    DESKTOP
+-------------- */
+
+.product {
+    margin: 7em 13% 10em 13%;
+}
+
+.product .image-product {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.product .image-product .slider-product {
+    width: 65%;
+    margin-right: 32px;
+}
+
+.product .image-product .slider-product .img {
+    width: 100%;
+    height: 636px;
+    object-fit: cover;
+    object-position: 50% 70%;
+    border-radius: 16px;
+}
+
+.product .image-product .box-action {
+    width: 40%;
+}
+
+.product .image-product .box-action .card {
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.product .image-product .box-action .card .name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.product .image-product .box-action .card .category {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8a;
+}
+
+.product .image-product .box-action .card .price {
+    font-weight: 400;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.product .image-product .box-action .card .button .btn {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 16px;
+}
+
+.product .image-product .box-action .card .button .btn.btn-terbit {
+    /* width: ; */
+    margin-bottom: 14px;
+    color: #ffffff;
+    background-color: #7126b5;
+    border: 1px solid #7126b5;
+    cursor: pointer;
+}
+
+.product .image-product .box-action .card .button .btn.btn-terbit:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #7126b5;
+    transition: 0.4s;
+}
+
+.product .image-product .box-action .store {
+    /* width: 304px; */
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 24px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.product .image-product .box-action .store .profile {
+    margin-right: 16px;
+}
+
+.product .image-product .box-action .store .info .name-store {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.product .image-product .box-action .store .info .city {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #8a8a8a;
+}
+
+.product .description {
+    width: 65%;
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.product .description .title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.product .description .content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8a;
+}
+
+
+/* --------------
+  MOBILE
+-------------- */
+
+@media only screen and (max-width: 576px) {
+    .product {
+        margin: 0 0 5em;
+    }
+    .product .image-product {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product .image-product .slider-product {
+        width: 100%;
+        margin: 0;
+    }
+    .product .image-product .slider-product .img {
+        border-radius: 0;
+    }
+    .product .image-product .box-action {
+        width: 90%;
+        margin-top: -35px;
+        z-index: 1;
+    }
+    .product .image-product .box-action .card .button {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: 1em;
+        right: 0em;
+    }
+    .product .image-product .box-action .card .button .btn {
+        width: 90%;
+    }
+    .product .description {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* --------------
+  MODAL
+-------------- */
+
+.mymodal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 438px;
+    padding: 56px 32px 24px 32px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    outline: none;
+}
+
+.myoverlay {
+    position: fixed;
+    z-index: 22;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}

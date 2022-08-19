@@ -1,0 +1,151 @@
+.content-wrapper {
+    padding: 0 10%;
+    margin-top: 2.5em;
+}
+
+.category-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.list-category {
+    display: flex;
+    margin-top: .5em;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+.list-category::-webkit-scrollbar {
+    display: none;
+}
+
+.category-filter {
+    display: flex;
+    align-items: center;
+    background: #E2D4F0;
+    border-radius: 12px;
+    color: #000000;
+    padding: .8em;
+    border: none;
+}
+
+.category-filter:active {
+    background: #7126B5;
+    color: #FFFFFF;
+}
+
+.search-icon-category {
+    margin-right: 4px;
+}
+
+
+/* LIST PRODUCT */
+
+.grid {
+    display: block;
+    display: grid;
+    grid-gap: 16px;
+    margin-top: 2em;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.card {
+    padding: 1em;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.card .img-product img {
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+    object-position: 50% 70%;
+    border-radius: 4px;
+}
+
+.nproduct {
+    height: 3em;
+    overflow-y: auto;
+}
+
+.nproduct::-webkit-scrollbar {
+    display: none;
+}
+
+.product-name {
+    margin: .6em 0;
+}
+
+.product-price {
+    margin-top: .9em;
+}
+
+.category-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8A8A8A;
+}
+
+
+/* TOMBOL JUAL */
+
+.jual {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-jual {
+    display: flex;
+    text-decoration: none;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 1em;
+    background: #7126B5;
+    border: 1px solid #7126B5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 1em;
+}
+
+.btn-jual:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #7126B5;
+    color: #000000;
+    transition: .4s;
+}
+
+.plus-icon {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-wrapper {
+        padding: 0 1em;
+    }
+    .category-section {
+        position: relative;
+        margin-top: -90px;
+        /* z-index: 2; */
+    }
+}
+
+
+/* @media only screen and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */

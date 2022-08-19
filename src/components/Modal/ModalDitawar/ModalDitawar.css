@@ -1,0 +1,155 @@
+.modal-ditawar {
+  width: 360px;
+  height: 456px;
+  padding: 56px 32px 24px 32px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-ditawar .icon-fix {
+  position: absolute;
+  top: 22px;
+  right: 38px;
+  font-size: 20px;
+}
+
+.modal-ditawar .icon-fix:hover {
+  cursor: pointer;
+}
+
+.modal-ditawar h1 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.modal-ditawar h2 {
+  margin-top: 16px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8a8a8a;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.modal-ditawar .box-item {
+  margin-top: 16px;
+  width: 296px;
+  height: 200px;
+  padding: 16px;
+  background: #eeeeee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+
+.modal-ditawar .box-item h1 {
+  text-align: center;
+}
+
+.modal-ditawar .akun-pembeli {
+  display: flex;
+}
+
+.modal-ditawar .akun-pembeli .img-item {
+  width: 48px;
+  height: 48px;
+  margin-top: 16px;
+  background: url(../../../assets/img/profile-2.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.modal-ditawar .nama-item {
+  margin-left: 16px;
+  margin-top: 21px;
+}
+
+.modal-ditawar .akun-pembeli h3 {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.modal-ditawar .akun-pembeli p {
+  margin-top: 4px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #8a8a8a;
+}
+
+.modal-ditawar .item-ditawar {
+  display: flex;
+}
+
+.modal-ditawar .item-ditawar .img-item {
+  width: 48px;
+  height: 48px;
+  margin-top: 16px;
+  background: url(../../../assets/img/product-3.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.modal-ditawar .item-ditawar h3 {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.modal-ditawar .item-ditawar p {
+  margin-top: 4px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #151515;
+}
+
+.modal-ditawar button {
+  margin-top: 24px;
+  padding: 14px 44px 14px 24px;
+  width: 296px;
+  height: 48px;
+  background: #7126b5;
+  border-radius: 16px;
+  border: none;
+  position: relative;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.modal-ditawar button:hover {
+  background-color: #ffffff;
+  border: 1px solid #7126b5;
+  color: #7126b5;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.modal-ditawar .icon-wa {
+  position: absolute;
+  top: 17.33px;
+  right: 25.33px;
+  font-size: 16px;
+}

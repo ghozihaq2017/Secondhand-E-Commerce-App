@@ -1,0 +1,184 @@
+/* --------------
+    DESKTOP
+-------------- */
+
+.product-seller {
+    margin: 7em 13% 2em 13%;
+}
+
+.product-seller .image-product {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-seller .image-product .slider-product {
+    width: 65%;
+    margin-right: 32px;
+}
+
+.product-seller .image-product .slider-product .img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-seller .image-product .box-action {
+    width: 40%;
+}
+
+.product-seller .image-product .box-action .card {
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.product-seller .image-product .box-action .card .name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.product-seller .image-product .box-action .card .category {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8A8A8A;
+}
+
+.product-seller .image-product .box-action .card .price {
+    font-weight: 400;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.product-seller .image-product .box-action .card .button .btn {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 16px;
+}
+
+.product-seller .image-product .box-action .card .button .btn.btn-terbit {
+    margin-bottom: 14px;
+    color: #FFFFFF;
+    background-color: #7126B5;
+    border: 1px solid #7126B5;
+    cursor: pointer;
+}
+
+.product-seller .image-product .box-action .card .button .btn.btn-terbit:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #7126B5;
+    transition: .4s;
+}
+
+.product-seller .image-product .box-action .card .button .btn.btn-edit {
+    margin-bottom: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #7126B5;
+    cursor: pointer;
+}
+
+.product-seller .image-product .box-action .card .button .btn.btn-edit:hover {
+    background-color: #7126B5;
+    color: #FFFFFF;
+    border: 1px solid #7126B5;
+    transition: .4s;
+}
+
+.product-seller .image-product .box-action .store {
+    /* width: 304px; */
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 24px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.product-seller .image-product .box-action .store .profile {
+    margin-right: 16px;
+}
+
+.product-seller .image-product .box-action .store .info .name-store {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.product-seller .image-product .box-action .store .info .city {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #8A8A8A;
+}
+
+.product-seller .description {
+    width: 65%;
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+
+.product-seller .description .title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.product-seller .description .content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8A8A8A;
+}
+
+
+/* --------------
+    MOBILE
+-------------- */
+
+@media only screen and (max-width: 576px) {
+    .product-seller {
+        margin: 0 0 9em;
+    }
+    .product-seller .image-product {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-seller .image-product .slider-product {
+        width: 100%;
+        margin: 0;
+    }
+    .product-seller .image-product .slider-product .img {
+        border-radius: 0;
+    }
+    .product-seller .image-product .box-action {
+        width: 90%;
+        margin-top: -35px;
+        z-index: 1;
+    }
+    .product-seller .image-product .box-action .card .button {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: 1em;
+        right: 0em;
+    }
+    .product-seller .image-product .box-action .card .button .btn {
+        width: 90%;
+    }
+    .product-seller .description {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,366 @@
+/* --------------
+    DESKTOP
+-------------- */
+
+header {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    z-index: 2;
+    top: -0.2em;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .desktop {
+    width: 80%;
+    margin: 0.9em auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .desktop .logo-searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .desktop .logo-searchbar .logo-brand {
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+header .desktop .logo-searchbar .logo-brand .brand {
+    width: 100px;
+}
+
+header .desktop .logo-searchbar .search .search-input {
+    padding: 12px 24px;
+    width: 444px;
+    height: 48px;
+    background: #eeeeee;
+    border-radius: 16px;
+}
+
+header .desktop .logo-searchbar .search .search-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+header .desktop .logo-searchbar .search .search-input:focus {
+    background-color: #ffffff;
+    border: 2px solid #7126b5;
+    outline: none;
+}
+
+header .desktop .logo-searchbar .search .search-btn {
+    margin-left: -43px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 1.8em;
+    cursor: pointer;
+}
+
+header .desktop .logo-searchbar .search .search-btn .search-icon {
+    font-size: 20px;
+    color: #8a8a8a;
+}
+
+header .desktop .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+header .desktop .menu .list {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header .desktop .menu .list.dropdown {
+    display: inline-block;
+}
+
+header .desktop .menu .list.dropdown:hover .isi-dropdown {
+    display: block;
+}
+
+header .desktop .menu .list.dropdown .isi-dropdown {
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #f9f9f9;
+}
+
+header .desktop .menu .list.dropdown .isi-dropdown .link-dropdown {
+    margin: 20px;
+}
+
+header .desktop .menu .list.dropdown .isi-dropdown .link-dropdown .link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+header .desktop .menu .list .login-btn {
+    /* padding: 14px 16px; */
+    width: 105px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #7126b5;
+    color: #ffffff;
+    border: 1px solid #7126b5;
+    border-radius: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .desktop .menu .list .login-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #7126b5;
+    transition: 0.4s;
+}
+
+header .desktop .menu .list .login-btn .login-icon {
+    font-size: 20px;
+}
+
+header .desktop .menu .list .list-btn,
+header .desktop .menu .list .bell-btn,
+header .desktop .menu .list .user-btn {
+    color: #000000;
+}
+
+
+/* --------------
+    MOBILE
+-------------- */
+
+@media only screen and (max-width: 576px) {
+    header {
+        background: transparent;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    header .desktop {
+        display: none;
+    }
+    header .mobile {
+        display: inherit;
+        padding: 0.9em 16px;
+    }
+    header .mobile .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .mobile .navbar .menu-bar {
+        padding: 10px;
+        background-color: #ffffff;
+        color: #000000;
+        /* border: 1px solid #000000; */
+        border-radius: 16px;
+        text-decoration: none;
+    }
+    header .mobile .navbar .menu-bar .hamburger {
+        font-size: 20px;
+    }
+    header .mobile .navbar .search .search-input {
+        padding: 12px 24px;
+        width: 100%;
+        height: 48px;
+        background: #eeeeee;
+        border-radius: 16px;
+    }
+    header .mobile .navbar .search .search-input::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    header .mobile .navbar .search .search-input:focus {
+        background-color: #ffffff;
+        border: 2px solid #7126b5;
+        outline: none;
+    }
+    header .mobile .navbar .search .search-btn {
+        margin-left: -43px;
+        border-radius: 50%;
+        background-color: transparent;
+        position: absolute;
+        top: 1.8em;
+        cursor: pointer;
+    }
+    header .mobile .navbar .search .search-btn .search-icon {
+        font-size: 20px;
+        color: #8a8a8a;
+    }
+    header .mobile .nav-menu {
+        width: 50%;
+        height: 150vh;
+        background-color: #ffffff;
+        position: absolute;
+        top: -0.1em;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header .mobile .nav-menu.active {
+        left: 0;
+        transition: 0.5s;
+    }
+    header .mobile .menu-background {
+        display: none;
+    }
+    header .mobile .menu-background.active {
+        display: inherit;
+        width: 100vw;
+        height: 101vh;
+        background-color: #000000;
+        opacity: 0.5;
+        position: absolute;
+        top: -0.1em;
+    }
+    header .mobile .nav-menu .menu-list {
+        margin: 34px 30px 0 16px;
+    }
+    header .mobile .nav-menu .menu-list .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    header .mobile .nav-menu .menu-list .menu .title-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header .mobile .nav-menu .menu-list .menu .title-list .logo-brand .brand {
+        width: 100px;
+    }
+    header .mobile .nav-menu .menu-list .menu .title-list .menu-bar {
+        text-decoration: none;
+        color: #222222;
+    }
+    header .mobile .nav-menu .menu-list .menu .title-list .menu-bar .menu-close {
+        font-size: 24px;
+        padding: 0;
+    }
+    header .mobile .menu .list.dropdown {
+        display: inline-block;
+    }
+    header .mobile .menu .list.dropdown:hover .isi-dropdown {
+        display: block;
+    }
+    header .mobile .menu .list.dropdown .isi-dropdown {
+        width: 90%;
+        position: absolute;
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        background-color: #f9f9f9;
+    }
+    header .mobile .menu .list.dropdown .isi-dropdown .link-dropdown {
+        margin: 20px;
+    }
+    header .mobile .menu .list.dropdown .isi-dropdown .link-dropdown .link {
+        text-decoration: none;
+        color: #000000;
+        font-size: 14px;
+    }
+    header .mobile .nav-menu .menu-list .menu .list .login-btn {
+        width: 105px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        background-color: #7126b5;
+        color: #ffffff;
+        border: 1px solid #7126b5;
+        border-radius: 16px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    header .mobile .nav-menu .menu-list .menu .list .login-btn:hover {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #7126b5;
+        transition: 0.4s;
+    }
+    header .mobile .nav-menu .menu-list .menu .list .login-btn .login-icon {
+        font-size: 20px;
+    }
+    header .mobile .nav-menu .menu-list .menu .list .link {
+        text-decoration: none;
+        color: #000000;
+    }
+    header .mobile .nav-menu .menu-list .menu .list .link .teks:hover {
+        width: 120px;
+        padding: 12px 0;
+        background-color: #7126b5;
+        color: #ffffff;
+    }
+    header .mobile .nav-menu .menu-list .menu .list .link .teks {
+        margin-bottom: 16px;
+    }
+}
+
+
+/* --------------
+    MODAL NOTIFICATIONS
+  -------------- */
+
+.mynotif {
+    position: absolute;
+    top: 70px;
+    right: 160px;
+    width: 376px;
+    height: 271px;
+    padding: 24px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    overflow: hidden;
+    outline: none;
+}
+
+.myoverlay {
+    position: fixed;
+    z-index: 22;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+    opacity: 0;
+}
